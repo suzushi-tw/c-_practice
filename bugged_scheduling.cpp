@@ -1,3 +1,9 @@
+// first algorithm:first come first serve
+// second algorithm: RR 
+// third algorithm: STCF
+
+
+
 #include <iostream>
 #include <string>
 #include <fstream>
