@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include<stdlib.h>
 
-void foo(int* &ptr)  // 使用參考來修改指標
+void foo(int* &ptr)  // use reference
 {
     int localvar = 10;
     ptr = (int *)malloc(sizeof(int));
@@ -10,7 +10,7 @@ void foo(int* &ptr)  // 使用參考來修改指標
 
 int main(){
     int *heapvar = NULL;
-    foo(heapvar);  // 直接傳遞指標
+    foo(heapvar);  // pass pointer 
     printf("%d\n", *heapvar);
     free(heapvar);
     return 0;
